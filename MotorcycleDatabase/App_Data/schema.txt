@@ -1,0 +1,8 @@
+﻿CREATE TABLE IF NOT EXISTS motorcycles (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	manufacturer TEXT NOT NULL,
+	model TEXT NOT NULL,
+	alias TEXT NOT NULL,
+	capacity INTEGER NOT NULL,
+	learner BOOLEAN NOT NULL
+);
