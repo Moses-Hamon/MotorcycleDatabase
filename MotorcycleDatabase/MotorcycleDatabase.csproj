@@ -75,12 +75,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\schema.txt" />
+    <Content Include="ctlField.ascx" />
     <Content Include="ctlMenu.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Editor.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctlField.ascx.cs">
+      <DependentUpon>ctlField.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctlField.ascx.designer.cs">
+      <DependentUpon>ctlField.ascx</DependentUpon>
+    </Compile>
     <Compile Include="ctlMenu.ascx.cs">
       <DependentUpon>ctlMenu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
