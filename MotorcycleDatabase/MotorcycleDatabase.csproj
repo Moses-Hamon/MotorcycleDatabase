@@ -75,9 +75,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\schema.txt" />
+    <Content Include="ctlMenu.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Editor.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctlMenu.ascx.cs">
+      <DependentUpon>ctlMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctlMenu.ascx.designer.cs">
+      <DependentUpon>ctlMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editor.aspx.cs">
+      <DependentUpon>Editor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor.aspx.designer.cs">
+      <DependentUpon>Editor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Motorcycle.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="MotorcycleManager.cs" />

@@ -24,7 +24,8 @@ namespace MotorcycleDatabase
             var SCHEMA_PATH = HttpContext.Current.Server.MapPath($"~/App_Data/schema.txt");
             var query = File.ReadAllText(SCHEMA_PATH);
 
-            //i'll be back
+            var db = GetSQLiteConnection();
+            db.Execute(query);
         }
 
         public static SQLiteConnection GetSQLiteConnection()
