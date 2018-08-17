@@ -79,6 +79,7 @@
     <Content Include="ctlMenu.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Editor.aspx" />
+    <Content Include="Images\Bike.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

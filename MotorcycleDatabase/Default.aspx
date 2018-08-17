@@ -13,11 +13,13 @@
 
 
 </head>
-<body>
+<body class="bg-dark">
     <form id="form1" runat="server">
+
+
         <ctl:Menu ID="ctlMenu" runat="server" /><br />
         <div>
-            <asp:GridView ID="gvList" runat="server" AutoGenerateColumns="false" OnSelectedIndexChanged="gvList_SelectedIndexChanged">
+            <asp:GridView CssClass="table-dark" ID="gvList" runat="server" AutoGenerateColumns="false" OnSelectedIndexChanged="gvList_SelectedIndexChanged">
                 <EmptyDataTemplate>
                     <h1>No data to display</h1>
                 </EmptyDataTemplate>
