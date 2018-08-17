@@ -19,22 +19,26 @@
         <ctl:Menu ID="ctlMenu" runat="server" />
         <div class="container">
             <h1 class="display-2">Motorcycle Record Editor</h1>
+            <ctl:Field ID="ctlId" runat="server" Label="ID" ReadOnly="true" />
+            <ctl:Field ID="ctlManufacturer" runat="server" Label="Manufacturer" />
+            <ctl:Field ID="ctlModel" runat="server" Label="Model" />
+            <ctl:Field ID="ctlAlias" runat="server" Label="Alias" />
+            <ctl:Field ID="ctlCapacity" runat="server" Label="Capacity" />
+
             <div class="row">
-                <div class="col"></div>
                 <div class="col">
-                    <ctl:Field ID="ctlId" runat="server" Label="ID" ReadOnly="true" />
-                    <ctl:Field ID="ctlManufacturer" runat="server" Label="Manufacturer" />
-                    <ctl:Field ID="ctlModel" runat="server" Label="Model" />
-                    <ctl:Field ID="ctlAlias" runat="server" Label="Alias" />
-                    <ctl:Field ID="ctlCapacity" runat="server" Label="Capacity" />
-                    <asp:CheckBox ID="chkLearner" runat="server" Text="LAMS Approved" />
-                    <br />
-                    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+                    <asp:CheckBox CssClass="float-right" ID="chkLearner" runat="server" Text="LAMS Approved" TextAlign="Left" />
+                </div>
+                 <div class="col"></div>
+            </div>
+           
+
+            <div class="row">
+                <div class="col">
+                    <asp:Button CssClass="float-right" ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
                 </div>
                 <div class="col"></div>
-
             </div>
-
         </div>
     </form>
 </body>
